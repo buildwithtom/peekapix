@@ -1,0 +1,27 @@
+:root {
+  color-scheme: light dark;
+  font: 14px/1.4 Barlow, sans-serif;
+  color: light-dark(#202724, #f5f0e4);
+  background: light-dark(#f3f0e8, #262d28);
+}
+* { box-sizing: border-box; }
+body { margin: 0; width: 300px; }
+header { background: #202724; padding: 11px 16px; border-bottom: 1px solid #4a574b; }
+.brand { display: flex; align-items: center; gap: 8px; color: #f3f0e8; font-size: 22px; font-weight: 700; letter-spacing: -.04em; }
+.brand-mark { width: 27px; height: 27px; }
+.brand-dot { color: #d9fc78; }
+main { padding: 18px 16px 16px; }
+.notice-line { width: 20px; height: 3px; background: #ce674c; margin-bottom: 9px; }
+h1 { font-size: 20px; line-height: 1.2; margin: 0; font-weight: 700; }
+p { margin: 8px 0 16px; color: light-dark(#49534a, #c4cec0); }
+button {
+  font: 600 13px Barlow, sans-serif;
+  color: inherit;
+  background: transparent;
+  border: 1px solid light-dark(#7e877b, #869182);
+  border-radius: 3px;
+  padding: 5px 12px;
+  cursor: pointer;
+}
+button:hover { background: light-dark(#e2e7d8, #3b473b); }
+button:focus-visible { outline: 2px solid light-dark(#486422, #d9fc78); outline-offset: 2px; }

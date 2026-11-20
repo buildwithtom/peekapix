@@ -1,0 +1,65 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Specimen Supply — Peekapix test fixture</title>
+  <link rel="stylesheet" href="/fixture.css">
+  <script src="/fixture.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a href="#" class="site-brand">SPECIMEN<br>SUPPLY<span>.</span></a>
+    <span class="site-label">UI fixture / revision 01</span>
+    <a href="#components" class="site-link">Components ↓</a>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="mini">COMPONENT CATALOG</div>
+      <h1>Field-tested<br>components.</h1>
+      <p>Compare the two builds to find differences in spacing, type, and color. Every control works outside picking mode.</p>
+    </section>
+    <section class="block" id="components">
+      <header class="block-label"><span>01</span><h2>Button samples</h2></header>
+      <div class="samples">
+        <div class="sample"><span class="label">BUILD 01</span><button id="button-baseline" class="specimen baseline" type="button">Add to kit</button></div>
+        <div class="sample"><span class="label">BUILD 02</span><button id="button-variant" class="specimen variant" type="button">Add to kit</button></div>
+      </div>
+      <output id="actions">0 kit actions</output>
+    </section>
+    <section class="block">
+      <header class="block-label"><span>02</span><h2>Grid &amp; flex cards</h2></header>
+      <div class="cards">
+        <article class="sample product"><div class="product-code">FLD / 01</div><h3>Caliper</h3><p>Cast steel, 0–150mm.</p><footer><span>In stock</span><button type="button"><span>Details</span></button></footer></article>
+        <article class="sample product product-offset"><div class="product-code">FLD / 02</div><h3>Angle gauge</h3><p>A longer description for testing typography, grid sizing, and nested flex alignment.</p><footer><span>In stock</span><button type="button">Details</button></footer></article>
+      </div>
+    </section>
+    <section class="block">
+      <header class="block-label"><span>03</span><h2>Forms &amp; containment</h2></header>
+      <div class="cards">
+        <form class="sample" id="form">
+          <label>Sample name <input name="sample" placeholder="Field sample"></label>
+          <label class="toggle"><input type="checkbox"> Include case</label>
+          <button id="submit-sample">Submit sample</button>
+          <output id="form-actions" aria-live="polite">0 submissions</output>
+        </form>
+        <div class="sample scrolling" tabindex="0">
+          <p class="sticky">Sticky header inside scroll area</p>
+          <p class="nowrap">An_unbroken_sample_identifier_that_overflows_horizontally</p>
+          <p>This scrollable test area contains a transformed element. Its rendered bounds respond to local scrolling and the transform.</p>
+          <div id="transformed" class="transformed">Scaled sample</div>
+          <p>End of local scrolling area.</p>
+        </div>
+      </div>
+    </section>
+    <section class="block" id="boundaries">
+      <header class="block-label"><span>04</span><h2>DOM boundaries</h2></header>
+      <div class="cards">
+        <div class="sample"><div id="shadow-sample"></div><button id="remove-sample" type="button">Remove selected test target</button><p id="remove-target">This node can be removed.</p></div>
+        <iframe class="sample" id="embedded-frame" sandbox src="/frame.html" title="Embedded frame fixture"></iframe>
+      </div>
+    </section>
+  </main>
+  <footer class="site-footer">Specimen Supply · Local verification fixture</footer>
+</body>
+</html>

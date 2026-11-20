@@ -1,0 +1,41 @@
+{
+  "name": "peekapix",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "Look closer. Fix smarter. Inspect, compare, and preview CSS directly on the page.",
+  "engines": { "node": ">=22.12" },
+  "scripts": {
+    "postinstall": "wxt prepare",
+    "dev": "wxt",
+    "build": "wxt build",
+    "zip": "wxt zip",
+    "check": "tsc --noEmit",
+    "lint": "eslint .",
+    "test": "node --import tsx --test tests/*.test.ts",
+    "test:browser": "playwright test",
+    "fixture": "node scripts/serve-fixtures.mjs"
+  },
+  "dependencies": {
+    "@fontsource/barlow": "^5.3.0",
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.0",
+    "@playwright/test": "^1.65.0",
+    "@types/node": "^22.0.0",
+    "@types/react": "^19.2.0",
+    "@types/react-dom": "^19.2.0",
+    "@wxt-dev/module-react": "^1.1.0",
+    "eslint": "^9.39.0",
+    "eslint-plugin-react-hooks": "^7.0.0",
+    "globals": "^16.0.0",
+    "tsx": "^4.23.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.0.0",
+    "vite": "^8.3.8",
+    "wxt": "^0.21.5"
+  }
+}
